@@ -61,6 +61,14 @@ ul {
   }
 }
 
+@media screen and (min-width: 601px) and (max-width: 1200px){
+  .login-section > div > p{
+    padding: 0;
+      font-size: 1.1rem;
+      margin-top: 15px;
+  }
+}
+
 @media only screen and (max-width: 600px) {
 .login-section > div > p{
   padding: 0;

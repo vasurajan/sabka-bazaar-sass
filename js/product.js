@@ -34,13 +34,13 @@ const getUpdatedList = async () => {
 // -------------------- ACCESSING DOM ELEMENTS --------------------
 const buttonDOM = document.querySelectorAll(".category-button"); // buttons
 const mobileButtonDOM = document.querySelectorAll(".custom-option"); // buttons
-console.log(buttonDOM)
+
 const mainContentDOM = document.querySelector(".products-section"); // main results div
 
 // Converting the DOMNode to an array
 const arrayDOM = Array.prototype.slice.call(buttonDOM);
 const arrayMobileDOM = Array.prototype.slice.call(mobileButtonDOM);
-console.log(typeof arrayDOM)
+
 
 // Toggle active class on buttons
 const makeButtonActive = (buttonArr, buttonValue) => {
@@ -53,7 +53,6 @@ const makeButtonActive = (buttonArr, buttonValue) => {
 
 // Adding the function on button click
 arrayDOM.map((button) => {
-  console.log(button)
   button.addEventListener("click", function () {
     updateCurrentData(APIdataArr, button.value);
     updateDOM(currentDataArr);
@@ -62,7 +61,6 @@ arrayDOM.map((button) => {
   });
 });
 arrayMobileDOM.map((button) => {
-  console.log(button)
   button.addEventListener("click", function () {
     updateCurrentData(APIdataArr, button.getAttribute("data-value"));
     updateDOM(currentDataArr);
@@ -88,7 +86,7 @@ const updateDOM = (contentArr) => {
     let node = document.createElement("div");
     node.classList.add("product-card", "box", "b7");
 
-    node.innerHTML = `<img src="${content.imageURL}" />
+    node.innerHTML = `<img src="${content.imageURL}" alt="${content.name}" />
     <div class="product-card-content">
         <h3 class="product-category">${content.name}</h3>
         <div class="product-name">Berry Blast</div>
@@ -97,7 +95,7 @@ const updateDOM = (contentArr) => {
     <div class="product-card-footer">
         <div class="product-reviews-wrapper">
             <div class="product-rating">
-                <span>${content.price}</span>
+                <span>$${content.price}</span>
             </div>
             <div class="product-review">Stock: ${content.stock}</div>
         </div>
@@ -160,8 +158,7 @@ const addToCart = (product) => {
 
   console.log(localStorage.getItem("cart"));
 
-  cartNumber.textContent = storageArray.length + " items";
-  // alert("Added to cart successfully")
+  cartNumber.textContent = `${storageArray.length} items`;
 };
 
 makeButtonActive(arrayDOM, localStorage.getItem("SHOWCATEGORY"));

@@ -8,6 +8,7 @@ let cartItems = JSON.parse(localStorage.getItem("cart")) || [];
 
 // Function to add items to the DOM
 const addCartItem = (content) => {
+  console.log(content);
   let DOMCartItem = document.createElement("tr");
   DOMCartItem.innerHTML = `<tr>
   <td>
@@ -35,7 +36,7 @@ for (item in cartItems) {
 }
 
 // Cart items in the nav bar
-DOMCartItem.textContent = cartItems.length;
+DOMCartItem.textContent = `${cartItems.length} items`;
 
 // Function to clear the cart items
 const clearCart = () => {

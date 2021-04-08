@@ -311,6 +311,9 @@ button {
   position: sticky;
   top: 0px; }
 
+.site-logo {
+  width: 11rem; }
+
 nav {
   flex: 1;
   text-align: right; }
@@ -917,13 +920,13 @@ img {
 
 #notification-area {
   position: fixed;
-  top: 0px;
+  top: 90px;
   right: 10px;
   width: 200px;
-  height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end; }
+  justify-content: flex-end;
+  z-index: 100; }
   #notification-area .notification {
     position: relative;
     padding: 15px 10px;
@@ -953,7 +956,7 @@ img {
   max-width: 100%;
   display: none; }
 
-@media (min-width: 1000px) {
+@media (min-width: 700px) {
   .custom-select-wrapper {
     display: none; } }
 
@@ -1165,6 +1168,12 @@ ul {
     color: black;
     padding-top: 15px;
     text-align: center; }
+
+@media screen and (min-width: 601px) and (max-width: 1200px) {
+  .login-section > div > p {
+    padding: 0;
+    font-size: 1.1rem;
+    margin-top: 15px; } }
 
 @media only screen and (max-width: 600px) {
   .login-section > div > p {

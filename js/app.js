@@ -4,6 +4,7 @@ window.onload = function () {
   document.getElementById("shopping-cart-image").classList.remove("fa-3x");
 };
 
+
 window.addEventListener("resize", function () {
   if (window.innerWidth < 700) {
     document.getElementById("shopping-cart-image").classList.add("fa-3x");

@@ -198,13 +198,13 @@ img {
 
 #notification-area {
   position: fixed;
-  top: 0px;
+  top: 90px;
   right: 10px;
   width: 200px;
-  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  z-index: 100;
 
   .notification {
     position: relative;

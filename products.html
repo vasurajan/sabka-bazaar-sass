@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Fonts -->
@@ -17,6 +17,26 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="./css/main.css" />
+    <!-- Favicon -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./static/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./static/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./static/favicon-16x16.png"
+    />
+    <!-- Favicon -->
+    <title>Products</title>
 
     <style>
       @media (max-width: 600px) {
@@ -28,11 +48,14 @@
   </head>
 
   <body>
-    <!-- Navbar -->
+    <!-- Navbar Starting -->
     <div class="navbar">
       <div class="logo">
         <a href="index.html">
-          <img src="./static/images/logo.png" alt="" width="40px"
+          <img
+            class="site-logo"
+            src="./static/images/logo.png"
+            alt="website logo sabka bazaar"
         /></a>
       </div>
       <nav>
@@ -55,8 +78,9 @@
         onclick="menutoggle()"
       />
     </div>
-    <!-- Navbar -->
+    <!-- Navbar Ending-->
 
+    <!-- Products Categories aside section Starting -->
     <aside>
       <button class="category-button" value="5b6899953d1a866534f516e2">
         Fruits & Vegetables
@@ -74,8 +98,9 @@
         Baby Care
       </button>
     </aside>
+    <!-- Product Categories aside section Ending -->
 
-      <!-- <select class="mobile-select-dropdown category-button" name="category">
+    <!-- <select class="mobile-select-dropdown category-button" name="category">
         <option value="5b6899953d1a866534f516e2">Fruits & Vegetables</option>
         <option value="5b6899123d1a866534f516de">Bakery Cakes and Dairy</option>
         <option value="5b675e5e5936635728f9fc30">Beverages</option>
@@ -83,29 +108,45 @@
         <option value="5b6899683d1a866534f516e0">Baby Care</option>
       </select> -->
 
-      <div class="custom-select-wrapper">
-        <div class="custom-select">
-            <div class="custom-select__trigger"><span>Fruits & Vegetables</span>
-                <div class="arrow"></div>
-            </div>
-            <div class="custom-options">
-                <span class="custom-option selected" data-value="5b6899953d1a866534f516e2">Fruits & Vegetables</span>
-                <span class="custom-option" data-value="5b6899123d1a866534f516de">Bakery Cakes and Dairy</span>
-                <span class="custom-option" data-value="5b675e5e5936635728f9fc30">Beverages</span>
-                <span class="custom-option" data-value="5b68994e3d1a866534f516df">Beauty and Hygiene</span>
-                <span class="custom-option" data-value="5b6899683d1a866534f516e0">Baby Care</span>
-            </div>
+      <!-- Dropdown section for product categories in mobile view Starting -->
+    <div class="custom-select-wrapper">
+      <div class="custom-select">
+        <div class="custom-select__trigger">
+          <span>Fruits & Vegetables</span>
+          <div class="arrow"></div>
         </div>
+        <div class="custom-options">
+          <span
+            class="custom-option selected"
+            data-value="5b6899953d1a866534f516e2"
+            >Fruits & Vegetables</span
+          >
+          <span class="custom-option" data-value="5b6899123d1a866534f516de"
+            >Bakery Cakes and Dairy</span
+          >
+          <span class="custom-option" data-value="5b675e5e5936635728f9fc30"
+            >Beverages</span
+          >
+          <span class="custom-option" data-value="5b68994e3d1a866534f516df"
+            >Beauty and Hygiene</span
+          >
+          <span class="custom-option" data-value="5b6899683d1a866534f516e0"
+            >Baby Care</span
+          >
+        </div>
+      </div>
     </div>
+    <!-- Dropdown section for product categories in mobile view Ending -->
 
-
-
+    <!-- Section for dispalying all products Starting -->
     <div class="content">
       <div class="container">
         <section class="products-section"></section>
       </div>
     </div>
+    <!-- Section for dispalying all products Starting -->
 
+    <!-- Section for dispalying "Added to cart" notification -->
     <div id="notification-area"></div>
 
     <!-- Footer Starting -->
@@ -114,10 +155,9 @@
     </footer>
     <!-- Footer Ending -->
 
-    
+    <!-- Script files -->
     <script src="./js/app.js"></script>
     <script src="./js/product.js"></script>
     <script src="./js/cart-number.js"></script>
-    
   </body>
 </html>
