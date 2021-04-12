@@ -76,6 +76,25 @@ td {
   margin-bottom: 100px;
 }
 
+
+@media (max-width: 768px) {
+  .navbar-cart-mobile {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .navbar-cart-tablet{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .shopping-cart{
+    margin-right: -300px;
+  }
+}
+
+
 @media only screen and (max-width: 600px) {
   .cart-page {
     text-align: center;

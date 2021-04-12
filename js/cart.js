@@ -26,9 +26,11 @@ const addCartItem = (content) => {
   DOMContent.appendChild(DOMCartItem);
 };
 
+// eslint-disable-next-line no-undef
 for (item in cartItems) {
   // iterating over the cart
   APIdataArr.filter((data) => {
+    // eslint-disable-next-line no-undef
     if (data.id === cartItems[item]) {
       addCartItem(data);
     }

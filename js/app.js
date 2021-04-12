@@ -1,5 +1,7 @@
 console.log("Script loaded!");
 
+const navbarMenuToggleButton = document.querySelector('.menu-icon')
+
 window.onload = function () {
   document.getElementById("shopping-cart-image").classList.remove("fa-3x");
 };
@@ -45,17 +47,21 @@ function changeSlide() {
 
 changeSlide();
 
-var MenuItems = document.getElementById("MenuItems");
+var MenuItems = document.querySelector(".MenuItems");
 
 MenuItems.style.maxHeight = "0px";
 
-function menutoggle() {
+
+const menutoggle = () => {
+  console.log("clicked")
   if (MenuItems.style.maxHeight == "0px") {
     MenuItems.style.maxHeight = "200px";
   } else {
     MenuItems.style.maxHeight = "0px";
   }
 }
+
+navbarMenuToggleButton.addEventListener('click', menutoggle)
 
 // const doc = document;
 // const menuOpen = doc.querySelector(".menu");

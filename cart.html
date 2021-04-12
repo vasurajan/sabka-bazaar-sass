@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cart Page</title>
+    <title>Cart Page Sabka Bazaar</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,200&display=swap"
       rel="stylesheet"
@@ -33,18 +33,11 @@
       href="./static/favicon-16x16.png"
     />
     <!-- Favicon -->
-    <style>
-      @media (max-width: 768px) {
-        nav {
-          display: none;
-        }
-      }
-    </style>
   </head>
 
   <body>
     <!-- Navbar Starting -->
-    <div class="navbar">
+    <div class="navbar navbar-cart-tablet">
       <div class="logo">
         <a href="index.html">
           <img
@@ -53,8 +46,8 @@
             alt="website logo sabka bazaar"
         /></a>
       </div>
-      <nav>
-        <ul id="MenuItems">
+      <nav class="navbar-cart-mobile">
+        <ul class="MenuItems">
           <li><a href="index.html">Home</a></li>
           <li><a href="products.html">Products</a></li>
 
@@ -72,7 +65,6 @@
         src="./static/images/menu.png"
         alt=""
         class="menu-icon"
-        onclick="menutoggle()"
       />
     </div>
     <!-- Navbar Ending -->

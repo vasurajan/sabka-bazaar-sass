@@ -1,8 +1,5 @@
 console.log("Script Loaded");
 
-
-//const overlay = document.getElementById("popup-1")
-
 // ---------- How the code is structured ----------
 // --FETCH API
 // --ACCESSING DOM ELEMENTS
@@ -16,7 +13,6 @@ localStorage.setItem("APIDATA", JSON.stringify([]));
 
 let APIdataArr = JSON.parse(localStorage.getItem("APIDATA"));
 
-// let APIdataArr = []; // data from the API
 let currentDataArr = []; // data from the API
 
 // Function to update the array
@@ -84,7 +80,7 @@ const updateDOM = (contentArr) => {
   mainContentDOM.innerHTML = ``;
   contentArr.map((content) => {
     let node = document.createElement("div");
-    node.classList.add("product-card", "box", "b7");
+    node.classList.add("product-card");
 
     node.innerHTML = `<img src="${content.imageURL}" alt="${content.name}" />
     <div class="product-card-content">
@@ -125,6 +121,7 @@ if (!JSON.parse(localStorage.getItem("cart"))) {
 }
 
 // Function to update cart items
+// eslint-disable-next-line no-unused-vars
 const addToCart = (product) => {
   
   console.log("added")
