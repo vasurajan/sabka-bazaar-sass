@@ -40,8 +40,8 @@ ul {
       margin-top: 0.5rem;
       width: 100%;
       height: 2.5rem;
-      background-color: #d6224c;
-      color: rgb(247, 246, 245);
+      background-color: $primary-color;
+      color: $secondary-color;
       border: 0;
     }
   }
@@ -53,9 +53,9 @@ ul {
   width: 100%;
   height: 3.125rem;
   text-align: center;
-  background-color: #eaeaea;
+  background-color: $background-color-footer;
   p {
-    color: black;
+    color: $dark-color-footer;
     padding-top: 15px;
     text-align: center;
   }
@@ -85,9 +85,9 @@ ul {
   bottom: 0;
   height: 3.125rem;
   text-align: center;
-  background-color: #eaeaea;
+  background-color: $background-color-footer;
   p {
-    color: black;
+    color: $dark-color-footer;
     padding-top: 15px;
     text-align: center;
   }

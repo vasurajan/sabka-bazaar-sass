@@ -48,12 +48,6 @@ div.content {
   }
 }
 
-// @media screen and (max-width: 400px) {
-//   aside button {
-//     text-align: center;
-//     float: none;
-//   }
-// }
 
 /* Cards Section Starting */
 @media (min-width: 768px) and (max-width: 1020px) {
@@ -203,7 +197,7 @@ img {
 //   top: 0;
 // }
 
-#notification-area {
+.notification-area {
   position: fixed;
   top: 90px;
   right: 10px;

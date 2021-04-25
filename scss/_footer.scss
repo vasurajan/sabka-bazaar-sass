@@ -4,9 +4,9 @@
   width: 100%;
   height: 3.125rem;
   text-align: center;
-  background-color: #eaeaea;
+  background-color: $background-color-footer;
   p {
-    color: black;
+    color: $dark-color-footer;
     padding-top: 15px;
     text-align: center;
   }

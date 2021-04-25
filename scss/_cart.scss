@@ -19,8 +19,8 @@ table {
 th {
   text-align: left;
   padding: 5px;
-  color: #fff;
-  background: #d6224c;
+  color: $secondary-color;
+  background: $primary-color;
   font-weight: normal;
 }
 
@@ -34,7 +34,7 @@ td {
   }
 
   a {
-    color: #d6224c;
+    color: $primary-color;
     font-size: 12px;
   }
 
@@ -52,7 +52,7 @@ td {
   padding: 0 25px;
 
   table {
-    border-top: 3px solid #d6224c;
+    border-top: 3px solid $primary-color;
     width: 100%;
     max-width: 400px;
   }
@@ -62,13 +62,13 @@ td {
   padding: 10px;
   border-radius: 3px;
   border: none;
-  background-color: #d6224c;
-  color: white;
+  background-color: $primary-color;
+  color: $secondary-color;
 }
 
 .clear-cart {
-  background-color: #d6224c;
-  color: #fff;
+  background-color: $primary-color;
+  color: $secondary-color;
   padding: 10px;
   border-radius: 5px;
   border: none;
@@ -83,7 +83,7 @@ td {
   }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (min-width: 768px) and (max-width: 1020px) {
   .navbar-cart-tablet{
     display: flex;
     justify-content: space-between;

@@ -2,6 +2,8 @@
 
 /* Tablet View Start */
 
+
+
 @media screen and (min-width: 601px) and (max-width: 1200px) {
   .categories-baby {
     display: flex;
@@ -9,10 +11,8 @@
 
      * {
       &:nth-child(1) {
-        flex: 1 1 70%;
-        justify-content: space-between;
-        min-width: 25ch;
-        margin-top: 20px;
+
+        @include categoriesSpacing(70%, 25ch, 20px)
       }
 
       &:nth-child(2) {
@@ -45,10 +45,7 @@
 
     > * {
       &:nth-child(1) {
-        flex: 1 1 70%;
-        justify-content: space-between;
-        min-width: 20ch;
-        margin-top: -20px;
+        @include categoriesSpacing(70%, 20ch, -20px);
         margin-left: 220px;
       }
 

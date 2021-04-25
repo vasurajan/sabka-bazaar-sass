@@ -1,5 +1,5 @@
 // DOM
-const DOMContent = document.querySelector(".content");
+const DOMContent = document.querySelector(".modal-body");
 const DOMButtonClearCart = document.querySelector(".clear-cart");
 const DOMCartItem = document.querySelector(".cart-items");
 
@@ -17,11 +17,10 @@ const addCartItem = (content) => {
       <div>
         <p><strong>${content.name}</strong></p>
         <small>Price per piece: ₹${content.price}</small>
+        <p><i class="fas fa-minus-circle"></i>1<i class="fas fa-plus-circle"></i> x ₹${content.price}<p>
       </div>
     </div>
   </td>
-  <td><input type="nunber" value="1"></td>
-  <td>₹${content.price}</td>
 </tr>`;
   DOMContent.appendChild(DOMCartItem);
 };

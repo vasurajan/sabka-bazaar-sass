@@ -37,8 +37,8 @@
 }
 
 .categories-bakery-content-button {
-  background-color: #d6224c;
-  color: #fff;
+  background-color: $primary-color;
+  color: $secondary-color;
   padding: 10px;
   border-radius: 5px;
   border: none;
@@ -56,10 +56,7 @@
 
     > * {
       &:nth-child(1) {
-        flex: 1 1 70%;
-        justify-content: space-between;
-        min-width: 39ch;
-        margin-top: 30px;
+        @include categoriesSpacing(70%, 39ch, 30px);
         margin-right: 10px;
       }
 
@@ -92,10 +89,7 @@
 
     > * {
       &:nth-child(1) {
-        flex: 1 1 30%;
-        justify-content: space-between;
-        min-width: 39ch;
-        margin-top: 20px;
+        @include categoriesSpacing(30%, 39ch, 20px);
         margin-right: -46px;
       }
 
