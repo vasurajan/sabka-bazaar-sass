@@ -317,7 +317,7 @@ button {
   margin: 0; }
 
 .modal-header {
-  background: var(--modal-color);
+  background: #000;
   padding: 15px;
   color: #fff;
   border-top-left-radius: 5px;
@@ -351,7 +351,7 @@ button {
 
 .close:hover,
 .close:focus {
-  color: #000;
+  color: #fff;
   text-decoration: none;
   cursor: pointer; }
 
@@ -530,7 +530,7 @@ img {
 
 .categories-common-content {
   margin-right: 150px;
-  margin-top: 50px; }
+  margin-top: 90px; }
 
 .categories-common-content-title,
 .categories-common-content-heading {
@@ -716,7 +716,7 @@ img {
 
 .categories-bakery-content {
   margin-left: 150px;
-  margin-top: 50px;
+  margin-top: 80px;
   text-align: center; }
 
 .categories-bakery-content-title {
@@ -794,7 +794,7 @@ img {
 
 .categories-beauty-content {
   margin-left: 150px;
-  margin-top: 50px;
+  margin-top: 80px;
   text-align: center; }
 
 .categories-beauty-content-title {
